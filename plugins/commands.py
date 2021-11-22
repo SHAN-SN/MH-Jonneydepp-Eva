@@ -18,10 +18,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('NEW RELEASE 🍿', url='https://t.me/joinchat/rAWW1iD2NBVhZTc1')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('MH Updates 💬', url=f"https://t.me/MoviesHub_Updates"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -63,7 +63,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "JOIN OUR UPDATE CHANNEL 📨", url=invite_link.invite_link
                 )
             ]
         ]
@@ -72,7 +72,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**നിങ്ങൾ ഞങ്ങളുടെ ചാനലിൽ ഇതുവരെ ജോയിൻ ചെയ്തിട്ടില്ല ജോയിൻ ചെയ്താൽ മാത്രമേ സിനിമകൾ കിട്ടുകയുള്ളൂ അതുകൊണ്ട് താഴെ കാണുന്ന  JOIN OUR UPDATE CHANNEL 📨 എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്തു ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്തതിന് ശേഷം വീണ്ടും താഴെ കാണുന്ന 🔄 Try Again എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയത് START ചെയ്യുക സിനിമ കിട്ടും \n\n[ You Have Not Yet Joined Our Channel  Please Try Again After Joining ]**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
