@@ -447,7 +447,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "help":
+    elif query.data == "mh2":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
             InlineKeyboardButton('Auto Filter', callback_data='autofilter')
@@ -460,11 +460,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.MH2_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "about":
+    elif query.data == "information":
         buttons= [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
@@ -474,7 +474,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            text=script.IFORMATION_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
