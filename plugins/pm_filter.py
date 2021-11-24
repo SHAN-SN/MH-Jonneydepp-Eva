@@ -422,6 +422,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption=f_caption
         if f_caption is None:
             f_caption = f"{title}"
+        buttons = [
+                    [
+                        InlineKeyboardButton('Search again 🔎', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('sʜᴀʀᴇ 🎗 sᴜᴘᴘᴏʀᴛ', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
+                    ]
+                    ]
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
