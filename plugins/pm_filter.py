@@ -380,12 +380,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption=f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = [
-                    [
+        buttons = [[
                         InlineKeyboardButton('Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
                         InlineKeyboardButton('Sʜᴀʀᴇ Nᴏᴡ  ➢', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
-                    ]
-                    ]
+                  ]]
             
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -428,12 +426,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption=f_caption
         if f_caption is None:
             f_caption = f"{title}"
-        buttons = [
-                    [
+        buttons = [[
                         InlineKeyboardButton('Nᴇᴡ Rᴇʟᴇᴀsᴇ 🍿', url='https://t.me/+rAWW1iD2NBVhZTc1'),
                         InlineKeyboardButton('Sʜᴀʀᴇ Nᴏᴡ  ➢', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
-                    ]
-                    ]
+                  ]]
 
         await query.answer()
         await client.send_cached_media(
@@ -447,11 +443,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
         InlineKeyboardButton('🗣️ 𝒪𝓊𝓇  𝒢𝓇𝑜𝓊𝓅 ', url='https://t.me/movies_Hubh2'),
-        InlineKeyboardButton('🎫 ℕ𝙚𝙬 ℝ𝙚𝙡𝙚𝙖𝙨𝙚 🍿', url='https://t.me/joinchat/aG4_u8iHx31mNzVl')
+        InlineKeyboardButton('🎫 ℕ𝙚𝙬 ℝ𝙚𝙡𝙚𝙖𝙨𝙚 🍿', url='https://t.me/+B94VHKIvaEFmMWE1')
     ],[
         InlineKeyboardButton('🎭 ℳ𝐨𝐯𝐢𝐞𝐬 ℋ𝐮𝐛 ℂ𝐡𝐚𝐧𝐧𝐞𝐥 📢', url='https://t.me/joinchat/lUOk6p8Lo445MmNl')
     ],[
-        InlineKeyboardButton('S𝙚𝙧𝙞𝙚𝙨 ℍ𝙪𝙗 📺', url='https://t.me/Series_MH'),
+        InlineKeyboardButton('S𝙚𝙧𝙞𝙚𝙨 ℍ𝙪𝙗 📺', url='https://t.me/MH_Series1'),
         InlineKeyboardButton('S̷𝕙𝕒𝕣𝕖 🎗 S̷𝕦𝕡𝕡𝕠𝕣𝕥', url='https://t.me/share/url?url=https://t.me/movies_Hubh2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -624,7 +620,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🎬 [{get_size(file.file_size)}] 🎭 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
