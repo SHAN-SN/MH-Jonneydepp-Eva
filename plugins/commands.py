@@ -42,7 +42,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('New Release', url='https://t.me/NewRelease_Links')
             ],[
-            InlineKeyboardButton('🧩 Link's', url='https://t.me/MH_Link'),
+            InlineKeyboardButton('🧩 Links', url='https://t.me/MH_Link'),
             InlineKeyboardButton(' Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -83,7 +83,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('New Release', url='https://t.me/NewRelease_Links')
             ],[
-            InlineKeyboardButton('🧩 Link's', url='https://t.me/MH_Link'),
+            InlineKeyboardButton('🧩 Links', url='https://t.me/MH_Link'),
             InlineKeyboardButton(' Updates 📨', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
