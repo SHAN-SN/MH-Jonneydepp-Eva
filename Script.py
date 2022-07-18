@@ -98,12 +98,17 @@ This module only works for my admins
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
-    LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
+    LOG_TEXT_G = """#NewGroup Added
+Group = {}(<code>{}</code>) {chatname}
 Total Members = <code>{}</code>
 Added By - {}
+Full Info - 【First Name : {first} Last Name : {last}
+User Name : {username} | {mention}
+DC id : {dcid}
+Bot - <a href=https://t.me/{}>{}</a>
 """
-    LOG_TEXT_P = """#NewUser
+    LOG_TEXT_P = """#NewUser Started Bot
 ID - <code>{}</code>
 Name - {}
+Bot - <a href=https://t.me/{}>{}</a>
 """
